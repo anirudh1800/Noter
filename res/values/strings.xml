@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <string name="app_name">Noter</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_main"></string>
+    <string name="title_activity_search">SearchActivity</string>
+    <string name="title_activity_about_note">AboutNoteActivity</string>
+    <string name="title_activity_about_noter">AboutNoterActivity</string>
+    <string name="title_activity_controls">ControlsActivity</string>
+    <string name="title_activity_update">UpdateActivity</string>
+
+    <style name="ButtonText">
+        <item name="android:textSize">15sp</item>
+        <item name="android:background">#D6D3E3</item>
+        <item name="android:textColor">#212121</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+</resources>

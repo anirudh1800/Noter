@@ -1,0 +1,111 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".MainActivity">
+    
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:background="@drawable/actionbar"
+        android:gravity="center" >
+        
+        <ImageButton
+            android:id="@+id/searchButton"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/bg_button"
+            android:src="@drawable/search_48" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/searchButton"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/searchButton" />
+
+        <ImageButton
+            android:id="@+id/saveButton"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@+id/searchButton"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/bg_button"
+            android:src="@drawable/save_48" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl1" >
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/editText3"
+            android:gravity="center"
+            android:inputType="text"
+            android:cursorVisible="true"
+            android:lines="1"
+            android:background="#00664E"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textCursorDrawable="@null"
+            android:typeface="serif" >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/editText3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/editText2"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:paddingRight="5dp"
+            android:inputType="none"
+            android:background="#00664E"
+            android:textColor="#ffffff"
+            android:text="0/0"
+            android:textSize="13sp"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/editText2"
+            android:paddingTop="5dp"
+            android:background="#00664E"
+            android:cursorVisible="true"
+            android:textCursorDrawable="@null"
+            android:typeface="sans"
+            android:textColor="#ffffff"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

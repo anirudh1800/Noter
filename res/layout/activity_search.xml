@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:background="#EADEC4"
+    tools:context=".SearchActivity" >
+
+    <TextView
+        android:id="@+id/search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/searchField"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="Search"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+    <EditText
+        android:id="@+id/searchField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search"
+        android:ems="10" >
+        <requestFocus />
+    </EditText>
+
+    <ListView
+        android:id="@+id/noteSearchList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/finish"
+        android:layout_alignLeft="@+id/searchField"
+        android:layout_below="@+id/searchField" >
+
+    </ListView>
+
+    <Button
+        android:id="@+id/go"
+        style="@style/ButtonText"
+        android:background="@drawable/bg_button"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/searchField"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/searchField"
+        android:text="Go!" />
+
+    <Button
+        android:id="@+id/finish"
+        style="@style/ButtonText"
+        android:background="@drawable/bg_button"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Finish" />
+
+</RelativeLayout>
